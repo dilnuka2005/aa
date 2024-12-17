@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isara's Portfolio</title>
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #151f28;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            padding: 10px 0;
+            width: 100%;
+            background: #00f7ff;
+            color: #151f28;
+            font-size: 1.8em;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #00f7ff;
+        }
+
+        /* Photos Section */
+        .photos, .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        img, video {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        img:hover, video:hover {
+            transform: scale(1.05);
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5em;
+            background: #00f7ff;
+            border-radius: 50%;
+            padding: 10px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #00c4cc;
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 10px 0;
+            background: #00f7ff;
+            color: #151f28;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Welcome to Isara's Portfolio
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Title -->
+        <h1>My Photos & Videos</h1>
+
+        <!-- Photos Section -->
+        <h2>Photos</h2>
+        <div class="photos">
+            <!-- Replace with your image links -->
+            <img src="https://via.placeholder.com/300" alt="Photo 1">
+            <img src="https://via.placeholder.com/300" alt="Photo 2">
+            <img src="https://via.placeholder.com/300" alt="Photo 3">
+            <img src="https://via.placeholder.com/300" alt="Photo 4">
+        </div>
+
+        <!-- Videos Section -->
+        <h2>Videos</h2>
+        <div class="videos">
+            <!-- Replace with your video links -->
+            <video src="video1.mp4" controls></video>
+            <video src="video2.mp4" controls></video>
+        </div>
+
+        <!-- Social Media Links -->
+        <h2>Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">F</a>
+            <a href="https://www.instagram.com" target="_blank">I</a>
+            <a href="https://www.twitter.com" target="_blank">T</a>
+            <a href="https://www.youtube.com" target="_blank">Y</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Isara's Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>
